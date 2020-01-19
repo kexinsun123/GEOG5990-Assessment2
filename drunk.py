@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 10 20:44:45 2020
-
-@author: Administrator
-"""
-
 import matplotlib.pyplot as plt 
 import numpy as np 
 import random
@@ -23,7 +16,7 @@ class WayHome():
         self.help_alldrunk()
     def plot_town(self, if_drunk=False, if_drunkP=False, if_save=False, title=''):
         # plot map of town
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(7, 7))
         for num in self.nums:
             if num != 0:
                 _ = self.spots[self.spots['num']==num]
