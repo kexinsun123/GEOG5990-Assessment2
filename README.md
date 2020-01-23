@@ -12,18 +12,17 @@ The python file (drunk.py) is finished and tested in "Spyder".
 2.Note that the Bakend of Graphics is "Inline", which can be found on the top of the window(Tools-References-Ipython console-Graphics-Backend-Inline).
 
 **Running outputs**
-1.When the model runs, Console 1/A window firstly originally shows a town map with 26 small rectangles: the one in the middle of the map represents the pub while other 25 rectangles represent homes of the drunks, so there are 25 drunks in need to find their homes.
-2.Based on the previous map, each drunk will be given the number (10, 20, ... 250) and arranged in random orders to leave the pub. The map called "The Route of Drunks" shows 25 routes in total to represent moving traces of all drunks from the pub to their homes.
-3.After that, the map called "The Density of Route" shows the frequency that drunks pass through each point: the lighter color represents high density.
+1.When the model runs, Console 1/A window firstly shows a town map with 26 points: the one in the middle of the map represents the pub while other 25 rectangles represent homes of the drunks, so there are 25 drunks in need to find their homes. Then each drunk will be given the number (10, 20, ... 250) and arranged in random orders to leave the pub. Based on the originaltown map, the map called "The Route of Drunks" make some changes, which shows 25 routes in total to represent moving traces of all drunks from the pub to their homes.
+3.After that, the map called "The Density of Route" is shown under Console 1/A window, which records the frequency that drunks pass through each point: the lighter color represents high density.
 
 **Kown issues**
 As there are some repeated parts of different routes, so mapping all routes for all drunks makes the map busy and unclear in visual effect. 
 
 **Test**
-The model can run regularly to show the town map and step maps and when it finishes the second one with random number begins immediately, which means the loop is valid.
+The code "plt.imshow(density)" makes the density of route be shown on the environment of drunk.txt. When it runs, the density map and the route map have the same background, so it proves that the data in drunk.txt has been pulled in.
 
 **Roadmap**
-For more concise and beautiful outputs, it is important to make an animation to show how one drunk find the home step by step, which is more continuous to show the moving process.
+For more concise and beautiful outputs, it is important to make an animation to show how drunks find their homes step by step, which is more continuous to show the moving process.
 
 **License**
 See the [MIT LICENSE](https://github.com/kexinsun123/GEOG5990-Assessment2/blob/master/LICENSE) here.
