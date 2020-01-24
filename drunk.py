@@ -54,7 +54,7 @@ def drunk_move(pos, target):
         return random.choice(options)
 
     
-# Get the middle position of houses.
+# Help drunks find the way to homes.
 def get_middle_of_house(house):
     x, y = 0, 0
     for pos in house:
